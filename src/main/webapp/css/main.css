@@ -1,7 +1,23 @@
+body {
+	background-color: #dde;
+}
+
+/*
+h1 {
+	text-align: center;
+}
+*/
+
 .container {
 	width: 1140px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 0 0 6px 6px;
 }
 
 .form-signin {
 	max-width: 330px;
+	margin: 0 auto;
+	padding: 0 0 10px;
 }
