@@ -20,15 +20,24 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-    <h1>Hello, world!</h1>
-    <a href="/register">Register page</a>
-    <a href="/login">Login page</a>
-    <a href="/myprofile">Profile page</a>
-    <a href="/mycalendars">Calendars page</a>
-    </div> <!-- /container -->
+	<div class="container">
+		<h1>Hello, world!</h1>
+		<div>
+			<a href="register">Register page</a>
+		</div>
+		<div>
+			<a href="login">Login page</a>
+		</div>
+		<div>
+			<a href="myprofile">Profile page</a>
+		</div>
+		<div>
+			<a href="mycalendars">Calendars page</a>
+		</div>
+	</div>
+	<!-- /container -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>

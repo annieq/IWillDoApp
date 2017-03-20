@@ -24,7 +24,7 @@
 <div class="container">
     <h1 class="error">Page not found</h1>
     <div>Sorry, the requested page does not exist.</div>
-    <a href="index.jsp">Go to main page</a>
+    <a href="index.jsp">Return to main page</a>
 </div>
 </body>
 </html>
