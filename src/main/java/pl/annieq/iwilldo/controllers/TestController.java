@@ -18,7 +18,13 @@ public class TestController {
     
     @RequestMapping("/login")
     public String loginPage(Model model) {
-        model.addAttribute("test", "test message");
+//        model.addAttribute("test", "test message");
         return "login";
+    }
+
+    @RequestMapping("/register")
+    public String registerPage(Model model) {
+//        model.addAttribute("test", "test message");
+        return "register";
     }
 }

@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Login - IWillDo</title>
+    <title>Register - IWillDo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,26 +32,33 @@
 	<div class="container">
 
 		<form class="form-signin">
-			<h2 class="form-signin-heading">Please sign in</h2>
+			<h2 class="form-signin-heading">Registration form</h2>
 			<div class="form-group">
-				<label for="inputEmail" class="sr-only">Email address</label> <input type="email" id="inputEmail"
-					class="form-control" placeholder="Email address" required autofocus> <label for="inputPassword"
-					class="sr-only">Password</label> <input type="password" id="inputPassword" class="form-control"
-					placeholder="Password" required>
-				<div class="checkbox">
-					<label> <input type="checkbox" value="remember-me"> Remember me
-					</label>
+				<label for="inputName" class="sr-only">Your name</label>
+				<div>
+					Name: <input type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
+				</div>
+				<label for="inputSurname" class="sr-only">Email address</label>
+				<div>
+					Surname: <input type="text" id="inputSurname" class="form-control" placeholder="Surname" required>
+				</div>
+				<label for="inputEmail" class="sr-only">Email address</label>
+				<div>
+					Email: <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+				</div>
+				<label for="inputPassword" class="sr-only">Password</label>
+				<div>
+					Password: <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 				</div>
 			</div>
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-			<a href="register">Register</a>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
 		</form>
 
 	</div>
 	<!-- /container -->
 
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
