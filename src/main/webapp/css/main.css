@@ -21,3 +21,36 @@ h1 {
 	margin: 0 auto;
 	padding: 0 0 10px;
 }
+
+/* calendar */
+.calendar-container {
+	margin: 12px auto 5px;
+}
+
+.calendar-table {
+	border: solid 2px #AAA;
+	width: 100%;
+}
+
+.current-month {
+}
+
+tr.week {
+	height: 100px;
+}
+
+td.day{
+	border: solid 1px #AAA;
+	padding: 0.2em 0.5em;
+	position: relative;
+}
+
+.day-header{
+    position: absolute;
+    top: 1px;
+}
+
+.day-area {
+	position: absolute;
+    top: 25px;
+}

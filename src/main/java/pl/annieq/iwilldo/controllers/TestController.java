@@ -27,4 +27,10 @@ public class TestController {
 //        model.addAttribute("test", "test message");
         return "register";
     }
+
+    @RequestMapping("/mycalendars")
+    public String myCalendarsPage(Model model) {
+//        model.addAttribute("test", "test message");
+        return "mycalendars";
+    }
 }
