@@ -7,17 +7,33 @@
     http://www.springframework.org/schema/security/spring-security-4.2.xsd">
 
     <http auto-config="true">
+        <!-- Public pages -->
         <intercept-url pattern="/" access="permitAll" />
         <intercept-url pattern="/index.jsp" access="permitAll" />
         <intercept-url pattern="/welcome" access="permitAll" />     <!-- TODO: remove -->
         <intercept-url pattern="/register" access="permitAll" />
+        <intercept-url pattern="/login" access="permitAll" />
+        <!-- access for CSS files -->
+        <intercept-url pattern="/css/**" access="permitAll" />
+        
         <intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
+        <!-- Custom login form -->
+        <form-login
+            login-page="/login"
+            login-processing-url="/j_spring_security_check"
+            default-target-url="/mycalendars"
+            authentication-failure-url="/login?error"
+            username-parameter="user"
+            password-parameter="pass" />
+        <logout logout-success-url="/login?logout" />
+        <!-- enable csrf protection -->
+        <csrf/>
     </http>
 
     <authentication-manager>
       <authentication-provider>
         <user-service>
-        <user name="ania" password="1qaz" authorities="ROLE_USER" />
+        <user name="ania@qa.qa" password="1qaz" authorities="ROLE_USER" />
         </user-service>
       </authentication-provider>
     </authentication-manager>

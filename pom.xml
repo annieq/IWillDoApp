@@ -8,14 +8,9 @@
 	<name>IWillDo Maven Webapp</name>
 	<url>http://itnaobcasach.blogspot.com/</url>
 	<dependencies>
-	<!-- Currently not needed -->
-<!-- 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
--->		
+		<!-- Currently not needed -->
+		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
+			<version>3.8.1</version> <scope>test</scope> </dependency> -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -46,6 +41,13 @@
 			<artifactId>spring-security-config</artifactId>
 			<version>4.2.2.RELEASE</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>IWillDo</finalName>

@@ -3,23 +3,19 @@ package pl.annieq.iwilldo.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class TestController {
     
+    // TODO: remove
     @RequestMapping("/welcome")
     public ModelAndView helloWorld() {
  
         String message = "<br><div style='text-align:center;'>"
                 + "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from CrunchifyHelloWorld.java **********</div><br><br>";
         return new ModelAndView("welcome", "message", message);
-    }
-    
-    @RequestMapping("/login")
-    public String loginPage(Model model) {
-//        model.addAttribute("test", "test message");
-        return "login";
     }
 
     @RequestMapping("/register")
@@ -28,9 +24,9 @@ public class TestController {
         return "register";
     }
 
-    @RequestMapping("/mycalendars")
-    public String myCalendarsPage(Model model) {
+    @RequestMapping(value = "/mycalendars**", method = RequestMethod.GET)
+    public ModelAndView myCalendarsPage(Model model) {
 //        model.addAttribute("test", "test message");
-        return "mycalendars";
+        return new ModelAndView("mycalendars");
     }
 }
