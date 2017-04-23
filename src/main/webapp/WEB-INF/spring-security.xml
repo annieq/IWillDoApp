@@ -24,18 +24,23 @@
             default-target-url="/mycalendars"
             authentication-failure-url="/login?error"
             username-parameter="user"
-            password-parameter="pass" />
+            password-parameter="pass" 
+            authentication-success-handler-ref="savedRequestAwareAuthenticationSuccessHandler" />
         <logout logout-success-url="/login?logout" />
         <!-- enable csrf protection -->
         <csrf/>
+        <remember-me
+            token-validity-seconds="1209600"
+            remember-me-parameter="remember-me"
+            data-source-ref="dataSource" />
     </http>
 
     <authentication-manager>
-      <authentication-provider>
-        <user-service>
-        <user name="ania@qa.qa" password="1qaz" authorities="ROLE_USER" />
-        </user-service>
-      </authentication-provider>
-    </authentication-manager>
+	<authentication-provider>
+		<jdbc-user-service data-source-ref="dataSource"
+			users-by-username-query="SELECT usr_login, usr_pass, 1 FROM users WHERE usr_login=?"
+			authorities-by-username-query="SELECT usr_login, 'ROLE_USER' FROM users WHERE usr_login=?" />
+	</authentication-provider>
+</authentication-manager>
 
 </beans:beans>
