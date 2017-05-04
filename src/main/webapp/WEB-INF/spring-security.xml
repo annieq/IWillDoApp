@@ -13,8 +13,9 @@
         <intercept-url pattern="/welcome" access="permitAll" />     <!-- TODO: remove -->
         <intercept-url pattern="/register" access="permitAll" />
         <intercept-url pattern="/login" access="permitAll" />
-        <!-- access for CSS files -->
+        <!-- access for CSS and JS files -->
         <intercept-url pattern="/css/**" access="permitAll" />
+        <intercept-url pattern="/js/**" access="permitAll" />
         
         <intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
         <!-- Custom login form -->
