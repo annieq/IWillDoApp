@@ -29,4 +29,10 @@ public class TestController {
 //        model.addAttribute("test", "test message");
         return new ModelAndView("mycalendars");
     }
+
+    @RequestMapping(value = "/myprofile", method = RequestMethod.GET)
+    public ModelAndView myProfilePage(Model model) {
+//        model.addAttribute("test", "test message");
+        return new ModelAndView("myprofile");
+    }
 }

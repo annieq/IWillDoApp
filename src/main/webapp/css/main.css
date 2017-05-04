@@ -22,6 +22,12 @@ h1 {
 	padding: 0 0 10px;
 }
 
+.container-profile {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 0 10px;
+}
+
 /* calendar */
 .calendar-container {
 	margin: 12px auto 5px;
@@ -53,4 +59,10 @@ td.day{
 .day-area {
 	position: absolute;
     top: 25px;
+}
+
+/* my profile */
+.row-label {
+	font-weight: bold;
+	padding: 2px 15px 2px 0;
 }
